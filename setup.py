@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="yawigle", # Replace with your own username
-    version="0.0.1",
+    version="0.0.3",
     author="Tabajara Ltd",
     author_email="danilonc@users.noreply.github.com",
     description="Yet another Wigle.net client API",

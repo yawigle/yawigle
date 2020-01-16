@@ -1,18 +1,27 @@
 # yawigle
-Yet Another Wigle.net API client
+Yet Another Wigle.net API client (WIP).
 
-## Description
-
-WIP Wigle.net client API.
 Check https://api.wigle.net/swagger for the API documentation.
+
+## Installation
+
+```bash
+python3 -m pip install yawigle
+```
+
+## API Key
+
+Go to https://wigle.net/account and click on `Show my token`
 
 ## Examples
 
 ### Get SSID, Latitude and Longitude of a Wifi MAC Address
 ```python
-In [1]: from yawigle import client                                                                                                                                 
+In [1]: from yawigle import client
 In [2]: c = client('AIDxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx','xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
-In [3]: nets = c.network.detail('fa:8f:ca:71:92:09')                                                                                                               In [4]: f"{nets[0]['ssid']} is located at {nets[0]['trilat']} {nets[0]['trilong']}"                                                                                Out[4]: 'Kitchen speaker.o is located at 37.23993301 -115.79644012'
+In [3]: nets = c.network.detail('fa:8f:ca:71:92:09')
+In [4]: f"{nets[0]['ssid']} is located at {nets[0]['trilat']} {nets[0]['trilong']}"
+Out[4]: 'Kitchen speaker.o is located at 37.23993301 -115.79644012'
 ```
 
 ### Search network by SSID
