@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="yawigle", # Replace with your own username
-    version="0.0.3",
-    author="Tabajara Ltd",
+    version="0.0.4",
+    author="yawigle",
     author_email="danilonc@users.noreply.github.com",
     description="Yet another Wigle.net client API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tabajara-ltd/yawigle",
+    url="https://github.com/yawigle/yawigle",
     packages=setuptools.find_packages(),
     install_requires=[
         'requests'
